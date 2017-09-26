@@ -12,8 +12,19 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   
-    logger(value){
-      console.log(value);
-    }
+  logger(value:Login){
+    let login:Login;
+    let result:Boolean = false;
+    
+    if(value.login === "Vincent" &&  value.password === "azerty")
+      result = true;
 
+    return result;
+  }
+
+}
+
+interface Login{
+  login:String,
+  password:String
 }
