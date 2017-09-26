@@ -1,33 +1,37 @@
-<h1>
+<h1 class="title">
   Création d'un joueur
 </h1>
 <div class="box">
-  <div class="column">
-      <div class="formgroup">
-          <div class="label">
-          Nom
-          </div>
-          <input type="text" placeholder="nom">
-      </div>
+  <div class="form">
+    <div class="column">
+        <div class="formgroup">
+            <div class="label">
+            NOM
+            </div>
+            <input type="text" placeholder="Nom">
+        </div>
 
-      <div class="formgroup">
-          <div class="label">
-          Nationalité
-          </div>
-          <input type="text" placeholder="nationalité">
-      </div>
+        <div class="formgroup">
+            <div class="label">
+            NATIONALITÉ
+            </div>
+            <input type="text" placeholder="Nationalité">
+        </div>
+    </div>
+    <div class="column">
+        <div class="formgroup">
+            <div class="label">
+            PRÉNOM
+            </div>
+            <input type="text" placeholder="Prénom">
+        </div>
+        <div class="formgroup">
+            <div class="label">
+            SEXE
+            </div>
+        <app-select></app-select>
+        </div>
+    </div>
   </div>
-  <div class="column">
-      <div class="formgroup">
-          <div class="label">
-          Prénom
-          </div>
-          <input type="text" placeholder="prenom">
-      </div>
-      <select id="select">
-          <option value="m" selected>Masculin</option>
-          <option value="f">Féminin</option>
-        </select>
-  </div>
-  <button class="send">Enregistrer</button>
+  <button class="send">ENREGISTRER</button>
 </div>

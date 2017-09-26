@@ -13,6 +13,7 @@ import { CreatePlayerComponent } from './component/create-player/create-player.c
 
 import { LoginContainerComponent } from './container/login-container/login-container.component';
 import { CreateContainerComponent } from './container/create-container/create-container.component';
+import { SelectComponent } from './component/select/select.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CreateContainerComponent } from './container/create-container/create-co
     LoginComponent,
     HeaderComponent,
     CreateContainerComponent,
-    CreatePlayerComponent
+    CreatePlayerComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,

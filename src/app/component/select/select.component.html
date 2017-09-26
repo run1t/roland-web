@@ -1,0 +1,11 @@
+<div class="select" (click)="hidder()">
+    <div class="selected" [ngClass]="{'border': !hide}">
+      {{getSelectedItem().text}}
+      <div class="arrow" [ngClass]="{'arrow-down': hide}"></div>
+    </div>
+    <div class="items-wrapper">
+      <div class="item" (click)="select(item)" *ngFor="let item of items" [ngClass]="{'hide': hide,'is-selected': item.selected}">
+              {{item.text}}
+      </div>
+  </div>
+</div>

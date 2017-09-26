@@ -10,20 +10,46 @@
 
 .box{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   border: 2px solid #e96d43;
   padding: 20px;
 
 }
 
+.form{
+  display: flex;
+  justify-content: space-around;
+}
+
 .label{
+  font-size: 20px;
   color: #ef7f4d;
+}
+
+app-select{
+  display: block;
+  margin:10px;
+  max-width: 230px;
+  box-sizing: content-box;
 }
 
 input{
   display: block;
   margin:10px;
+  padding: 15px;
+  max-width: 230px;
+  font-size: 10px;
+  border: none;
+  border: 1px solid #21553e;
+  border-radius: 3px;
+  min-width: 200px;
 }
+
+
+::-webkit-input-placeholder {color: #EEEEEE;}
+:-moz-placeholder           {color: #EEEEEE; /* For Firefox 18- */}
+::-moz-placeholder          {color: #EEEEEE; /* For Firefox 19+ */}
+:-ms-input-placeholder      {color: #EEEEEE;}
 
 .column{
   display: flex;
@@ -32,5 +58,11 @@ input{
 
 .send{
   background-color: #e96d43;
-  border-radius: 3px
+  border: none;
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  cursor: pointer;
 }
