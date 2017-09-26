@@ -1,10 +1,11 @@
+
 import { ApiService } from './service/api.service';
 import { ROUTES } from './app.router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { RouterModule  } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -29,7 +30,7 @@ import { SelectComponent } from './component/select/select.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES),
   ],
   providers: [
