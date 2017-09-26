@@ -1,0 +1,36 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  color: #21553e;
+}
+
+.box{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #e96d43;
+  padding: 20px;
+
+}
+
+.label{
+  color: #ef7f4d;
+}
+
+input{
+  display: block;
+  margin:10px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.send{
+  background-color: #e96d43;
+  border-radius: 3px
+}
