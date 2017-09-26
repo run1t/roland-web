@@ -9,6 +9,7 @@ import { AuthGuardService } from './service/auth-guard/auth-guard.service';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { AuthenticationService } from './service/authentication.service'
 
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -36,7 +37,8 @@ import { SelectComponent } from './component/select/select.component';
   ],
   providers: [
     ApiService,
-    AuthGuardService
+    AuthGuardService,
+    AuthenticationService
   ],
   bootstrap: [AppComponent]
 })
