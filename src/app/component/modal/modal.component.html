@@ -1,0 +1,8 @@
+<div class="container" *ngIf="show">
+  <div class="close" (click)="close()"> X </div>
+  <div class="items">
+    <div class="item" *ngFor="let item of items" (click)="selectEvent(item)">
+      {{item.text}}
+    </div>
+  </div>
+</div>

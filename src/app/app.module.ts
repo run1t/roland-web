@@ -1,4 +1,4 @@
-
+import { ModalComponent } from './component/modal/modal.component';
 import { ApiService } from './service/api.service';
 import { ROUTES } from './app.router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,7 +29,8 @@ import { OptionsContainerComponent } from './container/options-container/options
     CreateContainerComponent,
     CreatePlayerComponent,
     SelectComponent,
-    OptionsContainerComponent
+    OptionsContainerComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
