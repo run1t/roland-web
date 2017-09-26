@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -10,14 +10,16 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(VERSION.full)
   }
   
   logger(value:Login){
     let login:Login;
     let result:Boolean = false;
-    
-    if(value.login === "Vincent" &&  value.password === "azerty")
+
+    if (value.login === 'Vincent' &&  value.password === 'azerty') {
       result = true;
+    }
 
     return result;
   }
@@ -25,6 +27,6 @@ export class LoginComponent implements OnInit {
 }
 
 interface Login{
-  login:String,
-  password:String
+  login: String;
+  password: String;
 }

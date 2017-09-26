@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule  } from '@angular/router';
+import { AuthGuardService } from './service/auth-guard/auth-guard.service';
 
 import { AppComponent } from './app.component';
 
@@ -33,7 +34,8 @@ import { SelectComponent } from './component/select/select.component';
     RouterModule.forRoot(ROUTES),
   ],
   providers: [
-    ApiService
+    ApiService,
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })
