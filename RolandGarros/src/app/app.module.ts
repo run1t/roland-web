@@ -5,9 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { LoginComponent } from './component/login/login.component';
+import { HeaderComponent } from './component/header/header.component';
+import { CreatePlayerComponent } from './component/create-player/create-player.component';
+
+import { LoginContainerComponent } from './container/login-container/login-container.component';
+import { CreateContainerComponent } from './container/create-container/create-container.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginContainerComponent,
+    LoginComponent,
+    HeaderComponent,
+    CreateContainerComponent,
+    CreatePlayerComponent
   ],
   imports: [
     BrowserModule,
