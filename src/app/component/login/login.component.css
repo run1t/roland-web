@@ -1,0 +1,64 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .bg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  
+    background-image: url("../../../assets/bg/bglogin.jpg");
+    display: block;
+    filter: brightness(70%);
+    
+    height: 100%;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    justify-content: space-between;
+    margin-top: 100px;
+    z-index: 100;
+}
+
+.login form input{
+    border: none;
+    height: 40px;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 35px;
+
+    background: url("../../../assets/icons/user.png") no-repeat scroll 15px 15px;
+    padding-left:30px;
+
+    background-color: rgba(150, 150, 150, 0.4);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.login form ::-webkit-input-placeholder{
+    color: white;
+}
+
+.login form button{
+    border: none;
+    height: 60px;
+    width: 290px;
+    border-radius: 35px;
+    background-color: #F54B26;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0;
+    cursor: pointer;
+}
