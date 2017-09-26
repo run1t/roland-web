@@ -1,3 +1,4 @@
+import { ApiService } from './service/api.service';
 import { ROUTES } from './app.router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -31,7 +32,9 @@ import { SelectComponent } from './component/select/select.component';
     HttpModule,
     RouterModule.forRoot(ROUTES),
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

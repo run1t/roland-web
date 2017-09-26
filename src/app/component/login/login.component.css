@@ -9,11 +9,11 @@
     left: 0;
     right: 0;
     z-index: 1;
-  
+
     background-image: url("../../../assets/bg/bglogin.jpg");
     display: block;
     filter: brightness(70%);
-    
+
     height: 100%;
 }
 
