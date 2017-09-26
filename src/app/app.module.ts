@@ -16,6 +16,7 @@ import { CreatePlayerComponent } from './component/create-player/create-player.c
 import { LoginContainerComponent } from './container/login-container/login-container.component';
 import { CreateContainerComponent } from './container/create-container/create-container.component';
 import { SelectComponent } from './component/select/select.component';
+import { OptionsContainerComponent } from './container/options-container/options-container.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SelectComponent } from './component/select/select.component';
     HeaderComponent,
     CreateContainerComponent,
     CreatePlayerComponent,
-    SelectComponent
+    SelectComponent,
+    OptionsContainerComponent
   ],
   imports: [
     BrowserModule,
