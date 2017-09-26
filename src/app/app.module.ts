@@ -5,9 +5,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule  } from '@angular/router';
+import { AuthGuardService } from './service/auth-guard/auth-guard.service';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { AuthenticationService } from './service/authentication.service'
 
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -36,7 +38,9 @@ import { OptionsContainerComponent } from './container/options-container/options
     RouterModule.forRoot(ROUTES),
   ],
   providers: [
-    ApiService
+    ApiService,
+    AuthGuardService,
+    AuthenticationService
   ],
   bootstrap: [AppComponent]
 })
