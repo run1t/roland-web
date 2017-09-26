@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./options-container.component.css']
 })
 export class OptionsContainerComponent implements OnInit {
-  public show = true;
+  public showCreateModal = false;
   public optionList = [{
     text: 'JOUER'
   }, {
@@ -18,6 +18,10 @@ export class OptionsContainerComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  public openCreateOptions() {
+    this.showCreateModal = true;
   }
 
   public goToCreate($event) {

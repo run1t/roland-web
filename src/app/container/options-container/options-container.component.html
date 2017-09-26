@@ -2,7 +2,7 @@
   Que voulez-vous faire ?
 </div>
 <div class="box-wrapper">
-  <div class="box">
+  <div class="box" (click)="openCreateOptions()">
     <div class="title">
         CREATION
     </div>
@@ -35,4 +35,4 @@
     </div>
   </div>
 </div>
-<app-modal [(show)]="show" [items]="optionList" (selectedItem)="goToCreate($event)"></app-modal>
+<app-modal [(show)]="showCreateModal" [items]="optionList" (selectedItem)="goToCreate($event)"></app-modal>
