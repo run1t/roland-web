@@ -3,4 +3,32 @@ header{
   height: 60px;
   color:white;
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img{
+  width: 60px;
+  height: 60px;
+}
+
+header button{
+  background-color: #e96d43;
+  border: 1px solid white;
+  border-radius: 50px;
+
+  color: white;
+
+  height: 40px;
+  width: 100px;
+
+  cursor: pointer;
+
+  transition: .2s all;
+}
+
+header button:hover{
+  color: #e96d43;
+  background-color: white;
 }

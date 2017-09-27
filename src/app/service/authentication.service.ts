@@ -7,13 +7,13 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class AuthenticationService {
 
-  BASE:string = 'http://localhost:3000'
+  BASE = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
-  login(login:string, password:string){
+  login(login: string, password: string){
     //return this.http.post(this.BASE + '/token', JSON.stringify({login: login, password: password}))
-    return Observable.of({token:'fzefefzf'})
+    return Observable.of({token: 'fzefefzf'})
     .map((user) => {
       console.log(user);
       if(user && user.token){

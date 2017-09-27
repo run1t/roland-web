@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AuthenticationService } from './service/authentication.service'
+import { AuthenticationEventService } from './service/authentication-event.service'
 
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -41,7 +42,8 @@ import { OptionsContainerComponent } from './container/options-container/options
   providers: [
     ApiService,
     AuthGuardService,
-    AuthenticationService
+    AuthenticationService,
+    AuthenticationEventService
   ],
   bootstrap: [AppComponent]
 })
