@@ -1,14 +1,40 @@
 <div class="match">
-  <p *ngFor='let player of team1.players'>{{player}}</p>
-  <p>{{team1.score}}</p>
-  
-  <p>_________________________________________________________</p>
+  <header>
+    <div class="time">
+      <p>{{date | date}} /</p>
+      <p>{{startTime}} -</p>
+      <p>Durée: {{duration}}</p>
+    </div>
+    <p>{{typeMatch}}</p>
+    <p>{{court}}</p>
+  </header>
 
-  <p *ngFor='let player of team2.players'>{{player}}</p>
-  <p>{{team2.score}}</p>
+  <div class="tab">
 
-  <p>{{date}}</p>
-  <p>{{startTime}}</p>
-  <p>{{duration}}</p>
-  <p>{{court}}</p>
+    <div class="tab-row">
+      <p>JOUEURS</p>
+      <p>NOMBRE DE SETS GAGNÉS</p>
+    </div>
+
+    <div class="tab-row">
+      <div class="col1">
+        <p *ngFor='let player of team1.players'>{{player}}</p>
+      </div>
+      <div class="col2">
+        <p>{{team1.score}}</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="tab-row">
+      <div class="col1">
+        <p *ngFor='let player of team2.players'>{{player}}</p>
+      </div>
+      <div class="col2">
+        <p>{{team2.score}}</p>
+      </div>
+    </div>
+  </div>
+
 </div>

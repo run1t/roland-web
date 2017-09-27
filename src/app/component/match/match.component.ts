@@ -14,15 +14,12 @@ export class MatchComponent implements OnInit {
   @Input() duration: string;
   @Input() court: string;
 
+  typeMatch: string = '';
+
   constructor() { }
 
   ngOnInit() {
-    console.log(this.team1);
-    console.log(this.team2);
-    console.log(this.date);
-    console.log(this.startTime);
-    console.log(this.duration);
-    console.log(this.court);
+    this.typeMatch = this.team1.players.length > 1 ? 'Double messieurs' : 'Simple messieurs';
   }
 
 }

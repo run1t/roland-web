@@ -1,0 +1,33 @@
+.match header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f6f6f6;
+    align-items: center;
+}
+
+.match header .time{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.match header .time p{
+    padding-left: 5px;
+    margin: 0;
+}
+
+.match .tab{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.match .tab-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.match .divider{
+    height: 2px;
+    background-color: #f6f6f6;
+}
