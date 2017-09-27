@@ -11,27 +11,28 @@ import { Router } from '@angular/router'
 export class LoginComponent implements OnInit {
 
   constructor(
-    private authenticationService:AuthenticationService,
-    private authenticationEventService:AuthenticationEventService,
-    private router:Router
+    private authenticationService: AuthenticationService,
+    private authenticationEventService: AuthenticationEventService,
+    private router: Router
   ) { }
 
   ngOnInit() {
     console.log(VERSION.full);
     this.authenticationEventService.changing(true);
+    this.authenticationService.logout();
   }
   
-  logger(value:Login){
+  logger(value: Login){
 
     this.authenticationService.login(value.login, value.password).subscribe(() => {
-      this.authenticationEventService.changing(true); 
+      this.authenticationEventService.changing(true);
       this.router.navigate(['/create']);
     });
   }
 
 }
 
-interface Login{
+interface Login {
   login: string;
   password: string;
 }

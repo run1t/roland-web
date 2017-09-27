@@ -20,6 +20,8 @@ import { LoginContainerComponent } from './container/login-container/login-conta
 import { CreateContainerComponent } from './container/create-container/create-container.component';
 import { SelectComponent } from './component/select/select.component';
 import { OptionsContainerComponent } from './container/options-container/options-container.component';
+import { ListMatchContainerComponent } from './container/list-match-container/list-match-container.component';
+import { MatchComponent } from './component/match/match.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { OptionsContainerComponent } from './container/options-container/options
     CreatePlayerComponent,
     SelectComponent,
     OptionsContainerComponent,
-    ModalComponent
+    ModalComponent,
+    ListMatchContainerComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,

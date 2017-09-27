@@ -21,17 +21,12 @@ export class HeaderComponent implements OnInit {
       if(isChange){
         this.labelButton = localStorage.getItem('currentUser') ? 'Déconnection' : 'Connexion';
       }
-    })
+    });
   }
 
   ngOnInit() {}
 
   connection() {
-
-    if (localStorage.getItem('currentUser')) {
-      this.authenticationService.logout();
-    }
-
     this.router.navigate(['/login']);
   }
 

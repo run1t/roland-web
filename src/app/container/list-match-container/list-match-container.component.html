@@ -1,0 +1,10 @@
+<div class="listMatch">
+  <app-match *ngFor='let match of listMatches'
+    [team1]='match.team1'
+    [team2]='match.team2'
+    [date]='match.date'
+    [startTime]='match.startTime' 
+    [duration]='match.duration'
+    [court]='match.court'
+  ></app-match>
+</div>
