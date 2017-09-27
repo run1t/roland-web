@@ -32,8 +32,8 @@ build-docker:
   stage: docker
   script:
     - docker login -u docker -p docker https://gitlab.uneeon.com
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME .
-    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
+    - docker build -t gitlab.uneeon.com:$CI_COMMIT_REF_NAME .
+    - docker push gitlab.uneeon.com:$CI_COMMIT_REF_NAME
   tags:
     - docker
 
