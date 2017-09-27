@@ -32,8 +32,8 @@ build-docker:
   stage: docker
   script:
     - docker login -u docker -p docker https://gitlab.uneeon.com
-    - docker build -t gitlab.uneeon.com:$CI_COMMIT_REF_NAME .
-    - docker push gitlab.uneeon.com:$CI_COMMIT_REF_NAME
+    - docker build -t https://gitlab.uneeon.com/teamcook/web:$CI_COMMIT_REF_NAME .
+    - docker push https://gitlab.uneeon.com/teamcook/web:$CI_COMMIT_REF_NAME
   tags:
     - docker
 
@@ -44,7 +44,7 @@ deploy-test-first:
         name: review/$CI_COMMIT_REF_SLUG
         url: http://client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG.test.r.uneeon.ovh
   script:
-    - rancher run --name test/client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
+    - rancher run --name test/client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG https://gitlab.uneeon.com/teamcook/web:$CI_COMMIT_REF_NAME
   allow_failure: true
 
 
