@@ -45,9 +45,6 @@ deploy-test-first:
         url: http://client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG.test.r.uneeon.ovh
   script:
     - rancher run --name test/client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
-  except:
-    - master
-    - tags
   allow_failure: true
 
 
@@ -59,6 +56,4 @@ deploy-test-latest:
         url: http://client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG.test.r.uneeon.ovh
   script:
     - upgrade --stack test --service client-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG
-  except:
-    - master
-    - tags
+
