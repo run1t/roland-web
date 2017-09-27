@@ -6,17 +6,27 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 header img{
   width: 60px;
   height: 60px;
+  cursor: pointer;
 }
+
+header p{cursor: pointer}
 
 header button{
   background-color: #e96d43;
   border: 1px solid white;
   border-radius: 50px;
+
+  margin-right: 10px;
 
   color: white;
 

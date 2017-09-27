@@ -30,4 +30,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  gotoListMatch(){
+    this.router.navigate(['/matchs']);
+  }
+
 }
