@@ -31,6 +31,7 @@ export class SelectComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
   public getSelectedItem() {
